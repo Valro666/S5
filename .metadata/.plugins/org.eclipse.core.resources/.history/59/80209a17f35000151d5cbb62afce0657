@@ -1,0 +1,22 @@
+package toucan.modele;
+
+import java.util.ArrayList;
+
+public class LesCases {
+
+	ArrayList<Case> alc = new ArrayList<Case>();
+
+	void affecter() {
+
+	}
+
+	void comparer() {
+
+	}
+
+	@Override
+	public String toString() {
+		return "LesCases [alc=" + alc + "]";
+	}
+
+}

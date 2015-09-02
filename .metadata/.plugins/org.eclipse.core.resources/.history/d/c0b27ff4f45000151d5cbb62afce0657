@@ -1,0 +1,27 @@
+package toucan.modele;
+
+import java.util.ArrayList;
+
+public class LesCases {
+
+	ArrayList<Case> alc = new ArrayList<Case>();
+
+	int size() {
+		return alc.size();
+	}
+
+	Case get(int i) {
+		return alc.get(i);
+	}
+
+	void affecter() {
+
+	}
+
+	void comparer() {
+
+	}
+
+	
+
+}

@@ -1,0 +1,15 @@
+package toucan.modele;
+
+public class Mouvement {
+
+	
+	int x;
+	int y;
+	@Override
+	public String toString() {
+		return "Mouvement []";
+	}
+
+	
+
+}

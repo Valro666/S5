@@ -1,0 +1,16 @@
+package toucan.modele;
+
+public class Modele {
+
+	LesCases LC = new LesCases();
+
+	Algo actuel;
+
+	int static tmpMax = 12;
+
+	@Override
+	public String toString() {
+		return "Modele [LC=" + LC + "]";
+	}
+
+}

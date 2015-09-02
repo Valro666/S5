@@ -1,0 +1,16 @@
+package toucan.modele;
+
+import java.util.ArrayList;
+
+public class LesMouvements {
+
+	ArrayList<Mouvement> alm = new ArrayList<Mouvement>();
+
+	@Override
+	public String toString() {
+		return "LesMouvements [alm=" + alm + "]";
+	}
+
+	
+
+}

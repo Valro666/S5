@@ -1,0 +1,20 @@
+package toucan.modele;
+
+public abstract class Mouvement {
+
+	int x;
+	int y;
+
+	public Mouvement(int i, int j) {
+		x = i;
+		y = j;
+	}
+
+	public abstract void move();
+
+	@Override
+	public String toString() {
+		return "Mouvement [x=" + x + ", y=" + y + "]";
+	}
+
+}

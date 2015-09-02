@@ -1,0 +1,7 @@
+package toucan.modele;
+
+public class LesCases {
+
+	ArrayList<Case> alc = new ArrayList<Case>();
+
+}

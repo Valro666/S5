@@ -1,0 +1,10 @@
+package toucan.modele;
+
+public class Droite extends Mouvement {
+
+	public Droite(int i, int j) {
+		super(i, j);
+		// TODO Auto-generated constructor stub
+	}
+
+}

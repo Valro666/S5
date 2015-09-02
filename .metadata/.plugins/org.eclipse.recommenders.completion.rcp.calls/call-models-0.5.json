@@ -1,0 +1,13 @@
+{
+  "C:\\Users\\Dark_Valou\\Desktop\\Programation\\S5\\Toucan\\src": {
+    "location": "C:\\Users\\Dark_Valou\\Desktop\\Programation\\S5\\Toucan\\src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027C:\\Users\\Dark_Valou\\Desktop\\Programation\\S5\\Toucan\\src\u0027. Skipped."
+  },
+  "C:\\Program Files\\Java\\jre1.8.0_40\\lib\\rt.jar": {
+    "coordinate": "jre:jre:zip:call:1.0.0",
+    "location": "C:\\Program Files\\Java\\jre1.8.0_40\\lib\\rt.jar",
+    "status": "RESOLVED",
+    "error": "No class path info available for \u0027C:\\Program Files\\Java\\jre1.8.0_40\\lib\\rt.jar\u0027. Skipped."
+  }
+}

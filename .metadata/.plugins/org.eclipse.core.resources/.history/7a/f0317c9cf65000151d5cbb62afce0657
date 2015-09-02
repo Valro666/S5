@@ -1,0 +1,31 @@
+package toucan.modele;
+
+import java.util.ArrayList;
+
+public class LesCases {
+
+	ArrayList<Case> alc = new ArrayList<Case>();
+	
+	public void droite(int cellule , int distance){
+		alc.get(cellule);
+	}
+
+	int size() {
+		return alc.size();
+	}
+
+	Case get(int i) {
+		return alc.get(i);
+	}
+
+	void affecter() {
+
+	}
+
+	void comparer() {
+
+	}
+
+	
+
+}

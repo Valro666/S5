@@ -1,0 +1,7 @@
+package toucan.modele;
+
+public class LesMouvements {
+
+	ArrayList<Mouvements> alm = new ArrayList<Mouvement>();
+	
+}

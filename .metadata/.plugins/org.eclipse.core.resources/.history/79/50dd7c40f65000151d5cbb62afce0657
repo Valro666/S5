@@ -1,0 +1,10 @@
+package toucan.modele;
+
+public class test {
+
+	LesCases lesCases = new LesCases();
+
+	
+
+	
+}

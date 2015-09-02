@@ -1,0 +1,11 @@
+package toucan.modele;
+
+public class Mouvement {
+
+	@Override
+	public String toString() {
+		return "Mouvement [getClass()=" + getClass() + ", hashCode()="
+				+ hashCode() + ", toString()=" + super.toString() + "]";
+	}
+
+}

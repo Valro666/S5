@@ -1,0 +1,7 @@
+package toucan.modele;
+
+public class Algo {
+	
+	abstract void trier();
+
+}

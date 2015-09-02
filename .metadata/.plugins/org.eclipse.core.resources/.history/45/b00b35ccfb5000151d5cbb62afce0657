@@ -1,0 +1,61 @@
+package toucan.modele;
+
+import java.util.ArrayList;
+
+public class Case {
+
+	int val;
+
+	int x;
+	int y;
+
+	public Case(int a, int b) {
+		x = a;
+		y = b;
+		val = (int) System.nanoTime();
+	}
+
+	public void droite(int i) {
+		alm.add(new MoveDroite(x, y));
+		for (int j = 0; j < i; j++) {
+			
+			
+		}
+	}
+
+	LesMouvements LM = new LesMouvements();
+
+	ArrayList<Mouvement> alm = new ArrayList<Mouvement>();
+
+	public Case() {
+		val = (int) System.nanoTime();
+		System.out.println("adc");
+	}
+
+	public int getX(int index) {
+		return alm.get(index).x;
+	}
+
+	public int getY(int index) {
+		return alm.get(index).y;
+	}
+
+	@Override
+	public String toString() {
+		return "Case [LM=" + LM + "]";
+	}
+
+	public int getMaxTemps() {
+		// TODO Auto-generated method stub
+
+		int tmp = 0;
+
+		for (Mouvement m : LM.alm) {
+			tmp++;
+		}
+
+		// System.out.println(val+" nb mvt : " + tmp);
+		return alm.size() - 1;
+	}
+
+}
