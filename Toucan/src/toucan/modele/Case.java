@@ -9,26 +9,66 @@ public class Case {
 	int x;
 	int y;
 
+	LesMouvements LM = new LesMouvements();
+	//ArrayList<Mouvement> alm = new ArrayList<Mouvement>();
+
 	public Case(int a, int b) {
 		x = a;
 		y = b;
 		val = (int) System.nanoTime();
+		LM.add(new MoveImmo(x, y));
 
 	}
 
-	public void droite(int i) {
-		alm.add(new MoveDroite(x, y));
+	public void haut(int i) {
+		// alm.add(new MoveDroite(x, y));
 		for (int j = 0; j < i; j++) {
-			Mouvement m = new MoveDroite(x, y);
+			Mouvement m = new MoveHaut(x, y);
 			m.move();
-			alm.add(m);
+			LM.add(m);
+			y = m.y;
+		}
+	}
+
+	public void bas(int i) {
+		// alm.add(new MoveBas(x, y));
+		for (int j = 0; j < i; j++) {
+			Mouvement m = new MoveBas(x, y);
+			m.move();
+			LM.add(m);
+			y = m.y;
+		}
+	}
+
+	public void gauche(int i) {
+		// alm.add(new MoveGauche(x, y));
+		for (int j = 0; j < i; j++) {
+			Mouvement m = new MoveGauche(x, y);
+			m.move();
+			LM.add(m);
 			x = m.x;
 		}
 	}
 
-	LesMouvements LM = new LesMouvements();
+	public void droite(int i) {
+		// alm.add(new MoveDroite(x, y));
+		for (int j = 0; j < i; j++) {
+			Mouvement m = new MoveDroite(x, y);
+			m.move();
+			LM.add(m);
+			x = m.x;
+		}
+	}
 
-	ArrayList<Mouvement> alm = new ArrayList<Mouvement>();
+	public void immo(int i) {
+		// alm.add(new MoveImmo(x, y));
+		for (int j = 0; j < i; j++) {
+			Mouvement m = new MoveImmo(x, y);
+			m.move();
+			LM.add(m);
+			x = m.x;
+		}
+	}
 
 	public Case() {
 		val = (int) System.nanoTime();
@@ -36,11 +76,11 @@ public class Case {
 	}
 
 	public int getX(int index) {
-		return alm.get(index).x;
+		return LM.get(index).x;
 	}
 
 	public int getY(int index) {
-		return alm.get(index).y;
+		return LM.get(index).y;
 	}
 
 	@Override
@@ -58,7 +98,7 @@ public class Case {
 		}
 
 		// System.out.println(val+" nb mvt : " + tmp);
-		return alm.size() - 1;
+		return LM.size();
 	}
 
 }
